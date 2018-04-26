@@ -122,6 +122,11 @@ else if Pedersen = music ; Foobar2000
     gui_destroy()
     run "C:\Program Files (x86)\foobar2000\foobar2000.exe"
 }
+else if Pedersen = mygh ; Open my Github profile 
+{
+    gui_destroy() 
+    run https://github.com/EddieEldridge
+}
 else if Pedersen = inbox ; Open Hotmail inbox
 {
     gui_destroy()
