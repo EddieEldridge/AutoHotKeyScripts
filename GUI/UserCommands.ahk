@@ -159,6 +159,12 @@ else if Pedersen = url ; Open an URL from the clipboard (naive - will try to run
     gui_destroy()
     run %ClipBoard%
 }
+else if Pedersen = med2
+{
+    gui_destroy()
+    run "C:\Program Files (x86)\Steam\SteamApps\common\Medieval II Total War\mods\Third_Age_3\Third Age.bat"
+}
+
 
 
 ;-------------------------------------------------------------------------------
@@ -272,4 +278,10 @@ else if Pedersen = mute  ; Toggle mute
 {
     gui_destroy()
     SoundSet, +1, , mute 
+}
+
+else if Pedersen = sleep ; Hibernate PC
+{
+    gui_destroy()
+    DllCall("PowrProf\SetSuspendState", "int", 1, "int", 0, "int", 0)
 }
