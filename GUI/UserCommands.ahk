@@ -92,23 +92,23 @@ else if Pedersen = note ; Notepad
     gui_destroy()
     Run Notepad
 }
-else if Pedersen = cmd ; MS Paint
+else if Pedersen = cmd ; Cmder
 {
     gui_destroy()
     run "C:\Users\Eddie\Pictures\Win 7 Customization\cmder\cmder.exe"
 }
 
-else if Pedersen = java ; MS Paint
+else if Pedersen = java ; Eclipse
 {
     gui_destroy()
     run "C:\Users\Eddie\eclipse\java-neon\eclipse\eclipse.exe"
 }
-else if Pedersen = steam ; Third Age Total War
+else if Pedersen = steam ; Steam
 {
     gui_destroy()
     run "C:\Program Files (x86)\Steam\Steam.exe"
 }
-else if Pedersen = music ; Third Age Total War
+else if Pedersen = music ; Foobar2000
 {
     gui_destroy()
     run C:\Program Files (x86)\foobar2000\foobar2000.exe
@@ -118,7 +118,6 @@ else if Pedersen = inbox ; Open Hotmail inbox
     gui_destroy()
     run https://outlook.live.com/owa/
 }
-
 else if Pedersen = cinbox ; Open college Hotmail inbox
 {
     gui_destroy()
@@ -128,6 +127,11 @@ else if Pedersen = mes ; Opens Facebook messages
 {
     gui_destroy()
     run https://www.facebook.com/messages/t/
+}
+else if Pedersen = snip ; Opens Snipping tool
+{
+    gui_destroy()
+    run "C:\WINDOWS\system32\SnippingTool.exe"
 }
 else if Pedersen = url ; Open an URL from the clipboard (naive - will try to run whatever is in the clipboard)
 {
