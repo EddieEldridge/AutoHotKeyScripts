@@ -103,16 +103,10 @@ else if Pedersen = java ; MS Paint
     gui_destroy()
     run "C:\Users\Eddie\eclipse\java-neon\eclipse\eclipse.exe"
 }
-else if Pedersen = maps ; Google Maps focused on the Technical University of Denmark, DTU
-{
-    gui_destroy()
-    run "https://www.google.com/maps/@55.7833964`,12.5244754`,12z"
-}
 else if Pedersen = inbox ; Open google inbox
 {
     gui_destroy()
-    run https://inbox.google.com/u/0/
-    ; run https://mail.google.com/mail/u/0/#inbox  ; Maybe you prefer the old gmail
+    run https://outlook.live.com/owa/
 }
 else if Pedersen = mes ; Opens Facebook unread messages
 {
