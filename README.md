@@ -5,6 +5,8 @@
 ### What it is
 This is a small GUI that allows you to run any normal AutoHotkey command or block of code by typing a name for the command you want to run. 
 
+![capture](https://user-images.githubusercontent.com/22448079/39307071-bca4bcc8-4959-11e8-8653-dd81b3bceb6f.PNG)
+
 <b>Adapted from https://github.com/plul/Public-AutoHotKey-Scripts</b>
 
 ### How to use it
