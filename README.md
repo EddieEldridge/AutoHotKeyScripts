@@ -1,3 +1,7 @@
+
+![autohotkey](https://user-images.githubusercontent.com/22448079/39306984-842782e0-4959-11e8-9b71-9edc5a8b08aa.png)
+
+
 ### What it is
 This is a small GUI that allows you to run any normal AutoHotkey command or block of code by typing a name for the command you want to run. 
 
