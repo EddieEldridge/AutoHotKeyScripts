@@ -108,6 +108,11 @@ else if Pedersen = steam ; Third Age Total War
     gui_destroy()
     run "C:\Program Files (x86)\Steam\Steam.exe"
 }
+else if Pedersen = music ; Third Age Total War
+{
+    gui_destroy()
+    run C:\Program Files (x86)\foobar2000\foobar2000.exe
+}
 else if Pedersen = inbox ; Open Hotmail inbox
 {
     gui_destroy()
