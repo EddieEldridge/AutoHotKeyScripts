@@ -237,3 +237,9 @@ else if Pedersen = ? ; Tooltip with list of commands
     GuiControl,, Pedersen, ; Clear the input box
     Gosub, gui_commandlibrary
 }
+
+else if Pedersen = mute
+{
+    gui_destroy()
+    SoundSet, +1, , mute  ; Toggle the master mute (set it to the opposite state)
+}
