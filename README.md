@@ -1,8 +1,6 @@
 ### What it is
 This is a small GUI that allows you to run any normal AutoHotkey command or block of code by typing a name for the command you want to run. I wrote this script because I was creating more and more hotkeys for various things, but I ran out of keys on my keyboard to assign hotkeys to. It is designed to be as minimal as possible.
 
-![Screenshot](/img/ahk_launcher.png "Screenshot of the GUI")
-
 ### How to use it
 Run the `Host.ahk` file.
 
@@ -79,34 +77,3 @@ Example:
         gui_search_title = Youtube
         gui_search("https://www.youtube.com/results?search_query=REPLACEME")
     }
-
-### What is in store for the future
-There has been interest from a number of people in this script, and every once in a while I get a shoutout or a message on reddit from someone who found it and fell in love with it. That warms my heart, so I plan to clean it up completely one day. I also have some other AHK tricks that my life completely depends on, and I am looking forward to sharing those as well. I will wrap it all up in one script one day, and invite you into my world of CapsLock based bliss.
-
-I have this GUI that I have now shared with you. The major things I have built in addition to the GUI are a window manager, a minimalistic password manager (which is actually integrated into the `¯\_(ツ)_/¯` GUI), and some indispensable mappings to the `uiojkl` keys so that you will never have to touch the arrow keys again. I use all of it all the time, and I hope I will be able to share it with you soon. 
-
-### Known bugs
-The english to korean Google Translate example does not currently work on the combination of Windows10 + Google Chrome. This is because everything after the `#` symbol in the URL is stripped. This is a bug in Chrome. It has nothing to do with AutoHotkey. The issue was reported here: https://code.google.com/p/chromium/issues/detail?id=514162#c5
-
-### Most recent changes
-##### December 30. 2015:
-Most significant change is to `url_search(url)` as a consequence of a re-introduced feature: Ability to search multiple URLs. Searching multiple URLs is now possible as so:
-
-    else if Pedersen = m%A_Space% ; Open more than one URL
-    {
-        gui_search_title = multiple
-        gui_search("https://www.google.com/search?&q=REPLACEME")
-        gui_search("https://www.bing.com/search?q=REPLACEME")
-        gui_search("https://duckduckgo.com/?q=REPLACEME")
-    }
-
-Note that the syntax has changed with this update, where it used to be
-
-    gui_search_url := "https://www.youtube.com/results?search_query=REPLACEME"
-    gui_search()
-
-The url is now passed as a parameter instead:
-
-    gui_search("https://www.youtube.com/results?search_query=REPLACEME")
-
-Additionally, the tooltip was revived for Windows 10 and improved with the help of Github user schmimae.
