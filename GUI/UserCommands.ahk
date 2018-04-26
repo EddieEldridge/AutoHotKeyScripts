@@ -103,21 +103,21 @@ else if Pedersen = java ; MS Paint
     gui_destroy()
     run "C:\Users\Eddie\eclipse\java-neon\eclipse\eclipse.exe"
 }
-else if Pedersen = inbox ; Open google inbox
+else if Pedersen = inbox ; Open Hotmail inbox
 {
     gui_destroy()
     run https://outlook.live.com/owa/
 }
 
-else if Pedersen = cinbox ; Open google inbox
+else if Pedersen = cinbox ; Open college Hotmail inbox
 {
     gui_destroy()
-    run https://webmail.gmit.ie
+    run https://outlook.office.com/owa/
 }
-else if Pedersen = mes ; Opens Facebook unread messages
+else if Pedersen = mes ; Opens Facebook messages
 {
     gui_destroy()
-    run https://www.facebook.com/messages?filter=unread&action=recent-messages
+    run https://www.facebook.com/messages/t/
 }
 else if Pedersen = url ; Open an URL from the clipboard (naive - will try to run whatever is in the clipboard)
 {
