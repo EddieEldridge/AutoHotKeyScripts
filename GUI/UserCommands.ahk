@@ -68,7 +68,11 @@ else if Pedersen = gh%A_Space% ; Open GitHub
     gui_search_title = Search GitHub
     gui_search("https://github.com/search?utf8=%E2%9C%93&q=REPLACEME&type=")
 }
-
+else if Pedersen = so%A_Space% ; Open GitHub
+{
+    gui_search_title = Search StackOverflow
+    gui_search("https://stackoverflow.com/search?q=REPLACEME")
+}
 ;-------------------------------------------------------------------------------
 ;;; LAUNCH WEBSITES AND PROGRAMS ;;;
 ;-------------------------------------------------------------------------------
@@ -108,10 +112,15 @@ else if Pedersen = steam ; Steam
     gui_destroy()
     run "C:\Program Files (x86)\Steam\Steam.exe"
 }
+else if Pedersen = snip ; Snipping tool
+{
+    gui_destroy()
+    run "C:\WINDOWS\system32\SnippingTool.exe"
+}
 else if Pedersen = music ; Foobar2000
 {
     gui_destroy()
-    run C:\Program Files (x86)\foobar2000\foobar2000.exe
+    run "C:\Program Files (x86)\foobar2000\foobar2000.exe"
 }
 else if Pedersen = inbox ; Open Hotmail inbox
 {
@@ -128,11 +137,13 @@ else if Pedersen = mes ; Opens Facebook messages
     gui_destroy()
     run https://www.facebook.com/messages/t/
 }
-else if Pedersen = snip ; Opens Snipping tool
+else if Pedersen = racer ; Opens TypeR acer
 {
     gui_destroy()
-    run "C:\WINDOWS\system32\SnippingTool.exe"
+    run http://play.typeracer.com/
 }
+
+
 else if Pedersen = url ; Open an URL from the clipboard (naive - will try to run whatever is in the clipboard)
 {
     gui_destroy()
