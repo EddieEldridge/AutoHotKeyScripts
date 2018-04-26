@@ -97,6 +97,12 @@ else if Pedersen = cmd ; MS Paint
     gui_destroy()
     run "C:\Users\Eddie\Pictures\Win 7 Customization\cmder\cmder.exe"
 }
+
+else if Pedersen = java ; MS Paint
+{
+    gui_destroy()
+    run "C:\Users\Eddie\eclipse\java-neon\eclipse\eclipse.exe"
+}
 else if Pedersen = maps ; Google Maps focused on the Technical University of Denmark, DTU
 {
     gui_destroy()
