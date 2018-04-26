@@ -1,5 +1,7 @@
 ﻿; Created by Asger Juul Brunshøj
 
+; Modified by Edward Eldridge
+
 ; Note: Save with encoding UTF-8 with BOM if possible.
 ; I had issues with special characters like in ¯\_(ツ)_/¯ that wouldn't work otherwise.
 ; Notepad will save UTF-8 files with BOM automatically (even though it does not say so).
@@ -147,8 +149,11 @@ else if Pedersen = racer ; Opens TypeR acer
     gui_destroy()
     run http://play.typeracer.com/
 }
-
-
+else if Pedersen = todo 
+{
+    gui_destroy()
+    run Notepad C:\Users\Eddie\Documents\Rainmeter\Skins\Note pad\notes.txt
+}
 else if Pedersen = url ; Open an URL from the clipboard (naive - will try to run whatever is in the clipboard)
 {
     gui_destroy()
@@ -172,12 +177,12 @@ else if Pedersen = dir ; Open the directory for this script
 else if Pedersen = host ; Edit host script
 {
     gui_destroy()
-    run, notepad.exe "%A_ScriptFullPath%"
+    run, code.exe "%A_ScriptFullPath%"
 }
 else if Pedersen = user ; Edit GUI user commands
 {
     gui_destroy()
-    run, notepad.exe "%A_ScriptDir%\GUI\UserCommands.ahk"
+    run, code.exe "C:\Users\Eddie\Documents\AutoHotkeyScripts\Public-AutoHotKey-Scripts-master\GUI\UserCommands.ahk"
 }
 
 
@@ -219,11 +224,6 @@ else if Pedersen = down ; Downloads
     gui_destroy()
     run C:\Users\%A_Username%\Downloads
 }
-else if Pedersen = drop ; Dropbox folder (works when it is in the default directory)
-{
-    gui_destroy()
-    run, C:\Users\%A_Username%\Dropbox\
-}
 else if Pedersen = rec ; Recycle Bin
 {
     gui_destroy()
@@ -242,7 +242,7 @@ else if Pedersen = ping ; Ping Google
 else if Pedersen = hosts ; Open hosts file in Notepad
 {
     gui_destroy()
-    Run notepad.exe C:\Windows\System32\drivers\etc\hosts
+    Run C:\Program Files\Microsoft VS Code\Code.exe C:\Windows\System32\drivers\etc\hosts
 }
 else if Pedersen = date ; What is the date?
 {
@@ -268,8 +268,8 @@ else if Pedersen = ? ; Tooltip with list of commands
     Gosub, gui_commandlibrary
 }
 
-else if Pedersen = mute
+else if Pedersen = mute  ; Toggle mute
 {
     gui_destroy()
-    SoundSet, +1, , mute  ; Toggle the master mute (set it to the opposite state)
+    SoundSet, +1, , mute 
 }
