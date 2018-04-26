@@ -108,6 +108,12 @@ else if Pedersen = inbox ; Open google inbox
     gui_destroy()
     run https://outlook.live.com/owa/
 }
+
+else if Pedersen = cinbox ; Open google inbox
+{
+    gui_destroy()
+    run https://webmail.gmit.ie
+}
 else if Pedersen = mes ; Opens Facebook unread messages
 {
     gui_destroy()
