@@ -87,20 +87,15 @@ else if Pedersen = red ; reddit.com
     gui_destroy()
     run www.reddit.com
 }
-else if Pedersen = cal ; Google Calendar
-{
-    gui_destroy()
-    run https://www.google.com/calendar
-}
 else if Pedersen = note ; Notepad
 {
     gui_destroy()
     Run Notepad
 }
-else if Pedersen = paint ; MS Paint
+else if Pedersen = cmd ; MS Paint
 {
     gui_destroy()
-    run "C:\Windows\system32\mspaint.exe"
+    run "C:\Users\Eddie\Pictures\Win 7 Customization\cmder\cmder.exe"
 }
 else if Pedersen = maps ; Google Maps focused on the Technical University of Denmark, DTU
 {
@@ -161,17 +156,12 @@ else if Pedersen = @ ; Email address
 else if Pedersen = name ; My name
 {
     gui_destroy()
-    Send, My Full Name
+    Send, Edward Eldridge
 }
 else if Pedersen = phone ; My phone number
 {
     gui_destroy()
     SendRaw, +870974838
-}
-else if Pedersen = int ; LaTeX integral
-{
-    gui_destroy()
-    SendRaw, \int_0^1  \; \mathrm{d}x\,
 }
 else if Pedersen = logo ; Search
 {
