@@ -83,6 +83,10 @@ else if Pedersen = / ; Go to subreddit. This is a quick way to navigate to a spe
     gui_search_title := "/r/"
     gui_search("https://www.reddit.com/r/REPLACEME")
 }
+else if Pedersen = pizza ; Go to subreddit. This is a quick way to navigate to a specific URL.
+{
+    run "https://www.google.com/search?q=12+min+timer&ie=utf-8&oe=utf-8&client=firefox-b-ab"
+}
 else if Pedersen = face ; facebook.com
 {
     gui_destroy()
