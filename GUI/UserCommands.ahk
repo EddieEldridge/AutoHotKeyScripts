@@ -21,12 +21,7 @@ else if Pedersen = a%A_Space% ; Search Google for AutoHotkey related stuff
 {
     gui_search_title = Autohotkey Google Search
     gui_search("https://www.google.com/search?num=50&safe=off&site=&source=hp&q=autohotkey%20REPLACEME&btnG=Search&oq=&gs_l=")
-}
-else if Pedersen = l%A_Space% ; Search Google with ImFeelingLucky
-{
-    gui_search_title = I'm Feeling Lucky
-    gui_search("http://www.google.com/search?q=REPLACEME&btnI=Im+Feeling+Lucky")
-}
+} 
 else if Pedersen = m%A_Space% ; Open more than one URL
 {
     gui_search_title = multiple
@@ -34,18 +29,6 @@ else if Pedersen = m%A_Space% ; Open more than one URL
     gui_search("https://www.bing.com/search?q=REPLACEME")
     gui_search("https://duckduckgo.com/?q=REPLACEME")
 }
-else if Pedersen = x%A_Space% ; Search Google as Incognito
-;   A note on how this works:
-;   The function name "gui_search()" is poorly chosen.
-;   What you actually specify as the parameter value is a command to run. It does not have to be a URL.
-;   Before the command is run, the word REPLACEME is replaced by your input.
-;   It does not have to be a search url, that was just the application I had in mind when I originally wrote it.
-;   So what this does is that it runs chrome with the arguments "-incognito" and the google search URL where REPLACEME in the URL has been replaced by your input.
-{
-    gui_search_title = Google Search as Incognito
-    gui_search("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe -incognito https://www.google.com/search?safe=off&q=REPLACEME")
-}
-
 
 ;-------------------------------------------------------------------------------
 ;;; SEARCH OTHER THINGS ;;;
@@ -106,10 +89,10 @@ else if Pedersen = note ; Notepad
 else if Pedersen = cmd ; Cmder
 {
     gui_destroy()
-    run "C:\Users\Eddie\Pictures\Win 7 Customization\cmder\cmder.exe"
+    run "C:\Users\Eddie\Documents\Windows Customization\cmder\Cmder.exe"
 }
 
-else if Pedersen = java ; Eclipse
+else if Pedersen = eclipse ; Eclipse
 {
     gui_destroy()
     run "C:\Users\Eddie\eclipse\java-neon\eclipse\eclipse.exe"
@@ -134,12 +117,12 @@ else if Pedersen = mygh ; Open my Github profile
     gui_destroy() 
     run https://github.com/EddieEldridge
 }
-else if Pedersen = inbox ; Open Hotmail inbox
+else if Pedersen = mail ; Open Hotmail inbox
 {
     gui_destroy()
     run https://outlook.live.com/owa/
 }
-else if Pedersen = cinbox ; Open college Hotmail inbox
+else if Pedersen = webmail ; Open college Hotmail inbox
 {
     gui_destroy()
     run https://outlook.office.com/owa/
@@ -163,11 +146,6 @@ else if Pedersen = url ; Open an URL from the clipboard (naive - will try to run
 {
     gui_destroy()
     run %ClipBoard%
-}
-else if Pedersen = med2
-{
-    gui_destroy()
-    run "C:\Program Files (x86)\Steam\SteamApps\common\Medieval II Total War\mods\Third_Age_3\Third Age.bat"
 }
 
 
@@ -214,11 +192,6 @@ else if Pedersen = phone ; My phone number
 {
     gui_destroy()
     SendRaw, +870974838
-}
-else if Pedersen = logo ; Search
-{
-    gui_destroy()
-    Send SearchSearch
 }
 else if Pedersen = clip ; Paste clipboard content without formatting
 {
